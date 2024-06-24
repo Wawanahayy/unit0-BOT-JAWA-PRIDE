@@ -24,7 +24,7 @@ const main = async () => {
       colors.cyan(`Processing transactions for address: ${senderAddress}`)
     );
 
-    let senderBalance = await checkBalance(provider, senderAddress);
+    let senderBalance = await balance(provider, senderAddress);
 
     if (senderBalance < ethers.parseUnits('0.00001', 'ether')) {
       console.log(colors.red('BOT stopped. Insufficient or zero balance.'));
@@ -34,7 +34,7 @@ const main = async () => {
     let continuePrintingBalance = true;
     const printSenderBalance = async () => {
       while (continuePrintingBalance) {
-        senderBalance = await checkBalance(provider, senderAddress);
+        senderBalance = await balance(provider, senderAddress);
         console.log(
           colors.blue(
             `Current Balance: ${ethers.formatUnits(senderBalance, 'ether')} ETH`
@@ -50,7 +50,7 @@ const main = async () => {
     printSenderBalance();
 
     const transactionCount = readlineSync.questionInt(
-      `Enter the number of transactions you want to send for address ${senderAddress}: `
+      `UNTIL YOUR BALANCE NOT FUND OR STOP {number here 1,2,3} ${senderAddress}: `
     );
 
     for (let i = 1; i <= transactionCount; i++) {
@@ -124,7 +124,6 @@ const main = async () => {
           console.log(
             colors.red(`Error checking transaction status: ${e.message}`)
           );
-          await sleep(10000);
         }
       }
 
