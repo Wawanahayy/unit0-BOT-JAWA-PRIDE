@@ -1,7 +1,7 @@
 {
   "name": "unit0-BOT-JAWA-PRIDE",
   "version": "1.0.0",
-  "description": "you can trasnfer testnet units0 network use this bot.",
+  "description": "you can trasnfer testnet units0 network use this bot to random address.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
