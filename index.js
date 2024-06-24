@@ -56,7 +56,7 @@ const main = async () => {
 
     if (senderBalance < ethers.parseUnits('0.0001', 'ether')) {
       console.log(
-        colors.red('Insufficient or zero balance. Skipping to next address.')
+        colors.red('Insufficient or CHECK YOUR BALANCE . Skipping to next address.')
       );
       continue;
     }
@@ -161,7 +161,7 @@ const main = async () => {
         } else {
           console.log(
             colors.yellow(
-              'Transaction is still pending after multiple retries.'
+              'Transaction DONE check on explorer.'
             )
           );
         }
@@ -175,7 +175,7 @@ const main = async () => {
     }
 
     console.log(
-      colors.green(`Finished transactions for address: ${senderAddress}`)
+      colors.green(`FINISH YOUR TX TOTAL: ${senderAddress}`)
     );
   }
 };
