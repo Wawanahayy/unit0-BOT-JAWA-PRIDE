@@ -127,7 +127,7 @@ const main = async () => {
           console.log(
             colors.red(`Error checking transaction status: ${e.message}`)
           );
-          await sleep(10000);
+          await utility(10000);
         }
       }
 
