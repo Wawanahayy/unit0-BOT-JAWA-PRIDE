@@ -28,7 +28,6 @@ unit0-BOT-JAWA-PRIDE
    ```json
    [
        "private_key_1_here",
-       "private_key_2_here"
    ]
    ```
 
