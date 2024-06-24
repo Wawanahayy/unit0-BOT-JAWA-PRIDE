@@ -56,7 +56,7 @@ const main = async () => {
 
     if (senderBalance < ethers.parseUnits('0.0001', 'ether')) {
       console.log(
-        colors.red('Insufficient or CHECK YOUR BALANCE . Skipping to next address.')
+        colors.red('CHECK YOUR BALANCE . Skipping to next address.')
       );
       continue;
     }
@@ -89,7 +89,7 @@ const main = async () => {
     printSenderBalance();
 
     const transactionCount = readlineSync.questionInt(
-      `Enter the number of transactions you want to send for address ${senderAddress}: `
+      `TYPE THE NUMBERS YOU WANT TO MAKE A TRANSACTION}: `
     );
 
     for (let i = 1; i <= transactionCount; i++) {
