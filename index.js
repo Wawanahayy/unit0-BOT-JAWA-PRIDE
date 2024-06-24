@@ -26,7 +26,7 @@ const main = async () => {
 
     let senderBalance = await checkBalance(provider, senderAddress);
 
-    if (senderBalance < ethers.parseUnits('0.01', 'ether')) {
+    if (senderBalance < ethers.parseUnits('0.00001', 'ether')) {
       console.log(colors.red('BOT stopped. Insufficient or zero balance.'));
       continue;
     }
@@ -40,7 +40,7 @@ const main = async () => {
             `Current Balance: ${ethers.formatUnits(senderBalance, 'ether')} ETH`
           )
         );
-        if (senderBalance < ethers.parseUnits('0.0001', 'ether')) {
+        if (senderBalance < ethers.parseUnits('0.00001', 'ether')) {
           console.log(colors.red('Insufficient balance for transactions.'));
           continuePrintingBalance = false;
         }
