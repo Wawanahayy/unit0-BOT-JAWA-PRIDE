@@ -10,7 +10,7 @@ const sleep = require('./src/sleep');
 const rpcUrl = 'https://rpc-testnet.unit0.dev';
 
 const main = async () => {
-  displayHeader();
+  display();
 
   const privateKeys = JSON.parse(fs.readFileSync('privateKeys.json'));
 
@@ -40,7 +40,7 @@ const main = async () => {
             `Current Balance: ${ethers.formatUnits(senderBalance, 'ether')} ETH`
           )
         );
-        if (senderBalance < ethers.parseUnits('0.01', 'ether')) {
+        if (senderBalance < ethers.parseUnits('0.001', 'ether')) {
           console.log(colors.red('Insufficient balance for transactions.'));
           continuePrintingBalance = false;
         }
