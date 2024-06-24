@@ -1,0 +1,19 @@
+{
+  "name": "unit0-BOT-JAWA-PRIDE",
+  "version": "1.0.0",
+  "description": "you can trasnfer testnet units0 network use this bot.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "colors": "^1.4.0",
+    "ethers": "^6.13.1",
+    "readline-sync": "^1.4.10"
+  }
+}
