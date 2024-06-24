@@ -4,7 +4,7 @@ const fs = require('fs');
 const readlineSync = require('readline-sync');
 
 const checkBalance = require('./src/checkBalance');
-const display = require('./display/display`);
+const display = require('./display/display');
 const sleep = require('./src/sleep');
 
 const rpcUrl = 'https://rpc-testnet.unit0.dev';
@@ -127,7 +127,7 @@ const main = async () => {
           console.log(
             colors.red(`Error checking transaction status: ${e.message}`)
           );
-          await utility(10000);
+          await sleep(10000);
         }
       }
 
