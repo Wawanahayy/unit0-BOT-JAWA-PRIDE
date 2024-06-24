@@ -3,7 +3,7 @@ const colors = require('colors');
 const fs = require('fs');
 const readlineSync = require('readline-sync');
 
-const balance = require('./baolance/balance');
+const balance = require('./balance/balance');
 const display = require('./display/display');
 const sleep = require('./src/sleep');
 
