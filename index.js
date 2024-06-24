@@ -59,7 +59,7 @@ const main = async () => {
       console.log(colors.white(`\nGenerated address ${i}: ${receiverAddress}`));
 
       const amountToSend = ethers.parseUnits(
-        (Math.random() * (0.0001 - 0.00001) + 0.00001).toFixed(8).toString(),
+        (Math.random() * (0.00001 - 0.00001) + 0.00001).toFixed(8).toString(),
         'ether'
       );
 
