@@ -3,3 +3,10 @@ node_modules
 package-lock.json
 privateKeys.json
 rpc.txt
+
+
+npm-debug.log
+npm-debug.log.*
+pnpm-debug.log
+pnpm-debug.log.*
+yarn-error.log
