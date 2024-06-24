@@ -11,7 +11,7 @@ unit0-BOT-JAWA-PRIDE
    ```
 
    ```bash
-   cd unit0-BOT-JAWA-PRIDE.git
+   cd unit0-BOT-JAWA-PRIDE
    ```
 
 2. **Install dependencies:**
