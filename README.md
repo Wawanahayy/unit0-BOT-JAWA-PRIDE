@@ -27,7 +27,7 @@ unit0-BOT-JAWA-PRIDE
    **Example `privateKeys.json`:**
    ```json
    [
-       "private_key_1_here",
+       "private_key_1_here"
    ]
    ```
 
