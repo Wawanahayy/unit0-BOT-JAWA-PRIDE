@@ -5,13 +5,13 @@ const readlineSync = require('readline-sync');
 
 const checkBalance = require('./balance/balance');
 const displayHeader = require('./display/display');
-const sleep = require('./src/sleep');
+const sleep = require('./src/stop');
 const { start } = require('repl');
 
 const rpcUrl = 'https://rpc-testnet.unit0.dev';
 
-const MAX_RETRIES = 5;
-const RETRY_DELAY = 5000;
+const MAX_RETRIES = 3;
+const RETRY_DELAY = 3133;
 
 async function retry(fn, maxRetries = MAX_RETRIES, delay = RETRY_DELAY) {
   for (let i = 0; i < maxRetries; i++) {
@@ -76,7 +76,7 @@ const main = async () => {
               )} ETH`
             )
           );
-          if (senderBalance < ethers.parseUnits('0.01', 'ether')) {
+          if (senderBalance < ethers.parseUnits('0.00001', 'ether')) {
             console.log(colors.red('Insufficient balance for transactions.'));
             continuePrintingBalance = false;
           }
