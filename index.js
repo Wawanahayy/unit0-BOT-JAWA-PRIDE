@@ -68,7 +68,7 @@ const main = async () => {
             checkBalance(provider, senderAddress)
           );
           console.log(
-            colors.blue(
+            colors.bgMagenta(
               `Current Balance: ${ethers.formatUnits(
                 senderBalance,
                 'ether'
@@ -159,7 +159,7 @@ const main = async () => {
           }
         } else {
           console.log(
-            colors.yellow(
+            colors.bgGreen(
               'Transaction DONE check on explorer.'
             )
           );
@@ -174,7 +174,7 @@ const main = async () => {
     }
 
     console.log(
-      colors.green(`FINISH YOUR TX TOTAL: ${senderAddress}`)
+      colors.bgGreen(`FINISH YOUR TX TOTAL: ${senderAddress}`)
     );
   }
 };
