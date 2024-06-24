@@ -40,11 +40,10 @@ const main = async () => {
             `Current Balance: ${ethers.formatUnits(senderBalance, 'ether')} ETH`
           )
         );
-        if (senderBalance < ethers.parseUnits('0.001', 'ether')) {
+        if (senderBalance < ethers.parseUnits('0.0001', 'ether')) {
           console.log(colors.red('Insufficient balance for transactions.'));
           continuePrintingBalance = false;
         }
-        await sleep(5000);
       }
     };
 
@@ -97,8 +96,6 @@ const main = async () => {
           )} Gwei`
         )
       );
-
-      await sleep(15000);
 
       let receipt;
       for (let retryCount = 0; retryCount < 5; retryCount++) {
