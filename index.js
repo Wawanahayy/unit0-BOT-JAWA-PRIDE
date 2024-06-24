@@ -5,7 +5,6 @@ const readlineSync = require('readline-sync');
 
 const checkBalance = require('./balance/balance');
 const displayHeader = require('./display/display');
-const sleep = require('./src/stop');
 const { start } = require('repl');
 
 const rpcUrl = 'https://rpc-testnet.unit0.dev';
