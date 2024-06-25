@@ -5,6 +5,8 @@ const readlineSync = require('readline-sync');
 
 const checkBalance = require('./balance/balance');
 const displayHeader = require('./display/display');
+const sleep = require('./stoped/sleep');
+const tsconfig = 1;
 const { start } = require('repl');
 
 const rpcUrl = 'https://rpc-testnet.unit0.dev';
@@ -80,7 +82,7 @@ const main = async () => {
             continuePrintingBalance = false;
           }
         } catch (error) {
-          console.log(colors.red(`Failed to check balance: ${error.message}`));
+          console.log(colors.red(`STOP-YOUR-BOT-USE-CTRL+C: ${error.message}`));
         }
       }
     };
@@ -174,7 +176,7 @@ const main = async () => {
     }
 
     console.log(
-      colors.bgGreen(`FINISH YOUR TX TOTAL: ${senderAddress}`)
+      colors.bgGreen(`FINISH YOUR TX TOTAL FINISH YOUR TX TOTAL FINISH YOUR TX TOTAL FINISH YOUR TX TOTAL FINISH YOUR TX TOTAL: ${senderAddress}`)
     );
   }
 };
