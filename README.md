@@ -30,7 +30,7 @@ unit0-BOT-JAWA-PRIDE
 
 3. **private keys:**
 
-   - Create and edit `privateKeys.json`
+    Create and edit `privateKeys.json`
 
    **Example `privateKeys.json`:**
    ```json
@@ -40,7 +40,6 @@ unit0-BOT-JAWA-PRIDE
    ```
 
 
-## Usage
 
 - **Run the BOT:**
 
