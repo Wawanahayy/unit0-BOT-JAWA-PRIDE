@@ -1,7 +1,7 @@
 # unit0-BOT-JAWA-PRIDE
 unit0-BOT-JAWA-PRIDE
 
-[[channel]]([(https://t.me/AirdropJP_JawaPride))]
+[channel]([url](https://t.me/AirdropJP_JawaPride))
 
 
 ## Installation
