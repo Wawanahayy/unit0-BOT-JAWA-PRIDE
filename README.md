@@ -1,6 +1,7 @@
 # unit0-BOT-JAWA-PRIDE
 unit0-BOT-JAWA-PRIDE
 
+[website](https://linktr.ee/Jawa_Pride_ID)
 [channel](https://t.me/AirdropJP_JawaPride)
 
 
