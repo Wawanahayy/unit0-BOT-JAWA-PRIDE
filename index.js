@@ -10,14 +10,14 @@ const { start } = require('repl');
 const rpcUrl = 'https://rpc-testnet.unit0.dev';
 
 const MAX_RETRIES = 3;
-const RETRY_DELAY = 3133;
+const RETRY_DELAY = 3333;
 
 async function retry(fn, maxRetries = MAX_RETRIES, delay = RETRY_DELAY) {
   for (let i = 0; i < maxRetries; i++) {
     try {
       return await fn();
     } catch (error) {
-      if (i === maxRetries - 1) throw error;
+      if (i === maxRetries - 2) throw error;
       console.log(
         colors.yellow(`Error occurred. Retrying... (${i + 1}/${maxRetries})`)
       );
