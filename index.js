@@ -40,7 +40,7 @@ const main = async () => {
     const senderAddress = wallet.address;
 
     console.log(
-      colors.cyan(`Processing transactions for address: ${senderAddress}`)
+      colors.bgBlack(`Processing transactions for address: ${senderAddress}`)
     );
 
     let senderBalance;
@@ -90,7 +90,9 @@ const main = async () => {
     printSenderBalance();
 
     const transactionCount = readlineSync.questionInt(
-      `TYPE THE NUMBERS YOU WANT TO MAKE A TRANSACTION}: `
+      colors.bgRed(
+      `YOUR TRANSACTION NEEDS { NUMBER }: `
+     )
     );
 
     for (let i = 1; i <= transactionCount; i++) {
