@@ -2,7 +2,10 @@
 unit0-BOT-JAWA-PRIDE
 
 [website](https://linktr.ee/Jawa_Pride_ID)
+
 [channel](https://t.me/AirdropJP_JawaPride)
+
+[original motivation](https://github.com/dante4rt/units-network-bot/tree/main)
 
 
 ## Installation
