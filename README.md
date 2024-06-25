@@ -5,6 +5,8 @@ unit0-BOT-JAWA-PRIDE
 
 [channel](https://t.me/AirdropJP_JawaPride)
 
+[discus](https://t.me/AirdropJPdiskusi)
+
 [original motivation](https://github.com/dante4rt/units-network-bot/tree/main)
 
 
