@@ -43,6 +43,6 @@ unit0-BOT-JAWA-PRIDE
 
 4. **Run the BOT:**
 
-  ```bash
-  npm start
-  ```
+    ```bash
+    npm start
+    ```
